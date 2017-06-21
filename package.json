@@ -1,0 +1,31 @@
+{
+  "name": "playground",
+  "version": "1.0.0",
+  "description": "just play around with some techs",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-uglify": "^3.0.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^7.1.1",
+    "browser-sync": "^2.18.12",
+    "cssnano": "^3.10.0",
+    "gulp-data": "^1.2.1",
+    "gulp-nunjucks-render": "^2.2.1",
+    "gulp-postcss": "^7.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "postcss-mixins": "^6.0.0",
+    "postcss-nested": "^2.0.2",
+    "postcss-scss": "^1.0.1",
+    "postcss-simple-vars": "^4.0.0",
+    "sugarss": "^1.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Anton Efimov",
+  "license": "MIT",
+  "repository": {},
+  "main": "index.js"
+}

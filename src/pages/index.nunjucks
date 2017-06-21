@@ -1,0 +1,23 @@
+<!-- index.nunjucks -->
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+<h1>This is the index page test</h1>
+
+<!-- Importing Nunjucks Macro -->
+{% import 'macros/nav-macro.nunjucks' as nav %}
+<!-- Creating the navigation with activePage = 'home' -->
+{{nav.active('home')}}
+
+<!-- begin 'gallery' -->
+<div class="gallery">
+  <!-- Loops through "images" array -->
+  {% for image in images %}
+  <div class="gallery__item">
+    <img src="{{image.src}}" alt="{{image.alt}}">
+  </div>
+  {% endfor %}
+</div>
+<!-- end of 'gallery' -->
+
+{% endblock %}

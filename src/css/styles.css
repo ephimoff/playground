@@ -1,0 +1,49 @@
+$main-color: blue;
+$link-color: #ccc;
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+
+@define-mixin transition $property: all, $time: 150ms, $easing: ease-out {
+  transition: $(property) $(time) $(easing);
+}
+
+body {
+  @mixin transition color, 2s, ease-in;
+}
+.css_nano, .css_nano + p, [class*="css_nano"], .css_nano {
+    /* cssnano will remove this comment */
+    display: flex;
+    font-weight: normal;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    margin-left: 1.5rem;
+    margin-right: 2.5rem;
+    font-weight: normal;
+    padding: 1.75rem;
+    width: calc(50rem - (2 * 1.75rem));
+}
+
+h1 {
+    color: $main-color;
+}
+
+nav {
+    a {
+        color: $link-color;
+        &:hover {
+            color: magenta;
+        }
+    }
+}
+
+img {
+    @include border-radius(50%);
+    display: block;
+    width:100px;
+    height: 100px;
+    float: left;
+}
